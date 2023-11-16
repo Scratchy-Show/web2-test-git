@@ -1,6 +1,6 @@
 let spriteList = [];
 let time = 10;
-// Why not coconut
+
 window.addEventListener("load", () => {
     spriteList.push(new Alien("alien"));
     tick();
