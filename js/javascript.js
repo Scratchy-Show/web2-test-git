@@ -1,11 +1,11 @@
 let spriteList = [];
 let time = 10;
-
+// Why not coconut
 window.addEventListener("load", () => {
     spriteList.push(new Alien("alien"));
     tick();
 
-    setTimeout(reduceTime, 1000);
+    setTimeout(reduceTime, 1);
 });
 
 const reduceTime = () => {
@@ -13,7 +13,7 @@ const reduceTime = () => {
     document.querySelector("#input-timer").value = time;
 
     if (time > 0) {
-        setTimeout(reduceTime, 1000);
+        setTimeout(reduceTime, 1);
     }
 }
 
